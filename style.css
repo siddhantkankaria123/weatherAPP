@@ -1,0 +1,201 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Oswald", sans-serif;
+}
+.main-container {
+  overflow: hidden;
+  height: 95%;
+  width: 80%;
+  border-radius: 15px;
+  background-image: url(sl_031821_41530_20.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.container-one {
+  height: 8%;
+  width: 100%;
+  padding: 5px;
+}
+input[type="text"],
+select {
+  outline: none;
+  width: 80%;
+  padding: 1%;
+  background-color: #fffbf5;
+  border: 2px solid #000;
+  border-radius: 15px;
+  box-sizing: border-box;
+  color: black;
+  font-size: 1.3rem;
+}
+.search {
+  cursor: pointer;
+  font-size: 1.4rem;
+  padding: 1%;
+}
+#containertwo {
+  display: none;
+  height: 45%;
+  width: 100%;
+}
+.container-two-content {
+  height: 100%;
+  color: white;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  font-size: 1.5rem;
+}
+.temp-details {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+#cityName {
+  color: #0c134f;
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.date-details {
+  color: #090580;
+  font-size: 2rem;
+  border-bottom: 4px solid #0a6ebd;
+}
+.temp-lat-long {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1rem;
+}
+.temp {
+  margin-top: 1%;
+  width: fit-content;
+  height: fit-content;
+  padding: 1%;
+  color: #0a2647;
+  font-size: 4rem;
+  font-weight: 700;
+}
+.next-days-container {
+  height: 100%;
+  display: flex;
+}
+.containers {
+  height: 100%;
+  margin-top: 2%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+#maincontainerthree {
+  display: none;
+  height: 40%;
+  width: 32%;
+  font-size: 20px;
+}
+#maincontainerfour {
+  display: none;
+  height: 40%;
+  width: 32%;
+  font-size: 20px;
+}
+#maincontainerfive {
+  height: 40%;
+  display: none;
+  width: 32%;
+  font-size: 20px;
+}
+@media (max-width: 1000px) {
+  .main-container {
+    height: 100%;
+    width: 100%;
+    border-radius: 0;
+    background-image: url(sl_031821_41530_20.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .container-one {
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+  }
+  input[type="text"],
+  select {
+    width: 80%;
+    padding: 1%;
+  }
+  #containertwo {
+    overflow: hidden;
+    display: none;
+    height: 32%;
+    width: 100%;
+  }
+  .container-two-content {
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
+    font-size: 1rem;
+  }
+  #cityName {
+    font-size: 2rem;
+  }
+  .date-details {
+    font-size: 1rem;
+    border-bottom: 2px solid #0a6ebd;
+  }
+  .temp-lat-long {
+    width: 30%;
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    font-size: 1rem;
+  }
+  .temp {
+    width: 100%;
+    padding: 0;
+    font-size: 1.8rem;
+  }
+  .next-days-container {
+    border: 0;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    gap: 0;
+    overflow: hidden;
+  }
+  .containers {
+    font-size: 0.8rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  #maincontainerthree {
+    display: none;
+    height: 100%;
+    width: 30%;
+    padding: 0;
+  }
+  #maincontainerfour {
+    height: 100%;
+    display: none;
+    width: 30%;
+  }
+  #maincontainerfive {
+    height: 100%;
+    display: none;
+    width: 30%;
+  }
+  .search {
+    padding: 2%;
+  }
+}
